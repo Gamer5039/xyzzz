@@ -1,0 +1,247 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Container for main content */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Header */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Buttons */
+button, a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover, a:hover {
+    background: #0056b3;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+form input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #218838;
+}
+
+/* Responsive Cards */
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    list-style-type: none;
+}
+
+li {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+/* Links inside cards */
+li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    ul {
+        grid-template-columns: 1fr;
+    }
+}
+/* Login and Signup Page Styling */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 20px;
+}
+
+.auth-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth-box h1 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-box form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.auth-box form button {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background: #6a11cb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.auth-box form button:hover {
+    background: #2575fc;
+}
+
+.auth-box p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.auth-box a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-box a:hover {
+    text-decoration: underline;
+}
+/* Homepage Styles */
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-container h1 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.home-container a {
+    margin: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.home-container a:hover {
+    background: #0056b3;
+}
+
+/* Website List */
+.website-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.website-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.website-card a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
